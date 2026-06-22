@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>article-preview-component</title>
-  <link href="./dist/output.css" rel="stylesheet">
-  <script src="./script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article-preview-component</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-  <h1 class="text-2xl font-bold text-gray-800">article-preview-component</h1>
+<body class="flex bg-gray-200">
+<main class="m-auto">
+    <article
+            class="relative flex h-[538px] w-[327px] flex-col gap-8 overflow-hidden rounded-[10px] bg-white shadow-[0px_40px_40px_-10px_#C9D5E180] md:h-[346px] md:w-[608px] md:flex-row md:overflow-visible lg:h-[280px] lg:w-[730px] lg:gap-10">
+        <img src="./assets/drawers.jpg" alt="Drawers"
+             class="h-50 w-full object-cover md:h-[346px] md:w-[229px] md:rounded-tl-[10px] md:rounded-b-[0px] md:rounded-bl-[10px] md:object-[30%_50%] lg:h-[280px] lg:w-[285px] lg:object-left">
+        <div class="mx-auto flex flex-col gap-12 md:mx-0 md:my-auto md:w-[311px] md:gap-6 lg:w-[365px]">
+            <div class="flex w-[267px] flex-col gap-6 md:contents">
+                <h1 class="text-1 text-gray-900">Shift the overall look and feel by adding these wonderful touches to
+                    furniture in your home</h1>
+                <p class="text-2-medium text-gray-500">Ever been in a room and felt like something was missing? Perhaps
+                    it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel
+                    complete.</p>
+            </div>
+
+
+            <footer class="z-2 flex items-center md:relative">
+                <div id="share"
+                     class="absolute bottom-0 left-0 hidden h-[76px] w-full bg-gray-900 md:-right-[104px] md:-top-[80px] md:bottom-auto md:left-auto md:h-[55px] md:rounded-[10px] md:w-[248px] md:before:absolute md:before:content-[''] md:before:left-[116px] md:before:-bottom-[24px] md:before:w-0 md:before:h-0 md:before:border-[12px] md:before:border-r-transparent md:before:border-t-gray-900 md:before:border-l-transparent md:before:border-b-transparent md:shadow-[0px_10px_10px_0px_#C9D5E180]">
+                    <div class="m-auto flex h-10 w-[267px] items-center gap-6 md:w-auto">
+                        <span class="text-3 text-gray-400">SHARE</span>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="./assets/icon-facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <img src="./assets/icon-twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://pinterest.com" target="_blank">
+                                <img src="./assets/icon-pinterest.svg" alt="Pinterest">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/avatar-michelle.jpg" alt="Avatar" class="h-10 w-10 rounded-full">
+                    <div class="flex flex-col">
+                        <h2 class="text-2-bold text-gray-900">Michelle Appleton</h2>
+                        <p class="text-2-medium text-gray-400">28 Jun 2020</p>
+                    </div>
+                </div>
+
+                <button id="share-btn"
+                        class="z-3 ml-auto h-8 w-8 cursor-pointer rounded-full bg-gray-200 hover:bg-gray-300">
+                    <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                        <path fill="#6E8098"
+                              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+                    </svg>
+                </button>
+            </footer>
+        </div>
+
+    </article>
+</main>
+<footer class="fixed bottom-0 left-1/2 -translate-1/2 text-2-medium text-gray-900">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-900 underline" target="_blank">Frontend Mentor</a>.</span>
+    <span>Coded by <a href="https://www.frontendmentor.io/profile/lowkkid" class="text-blue-900 underline" target="_blank">lowkkid</a>.
+</span>
+</footer>
 </body>
 </html>
